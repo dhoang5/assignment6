@@ -21,5 +21,5 @@ jobs:
       - name: Build and push container
         run: |
           docker build -t my-container .
-          docker tag my-container <registry_username>/<image_name>:<tag>
-          docker push <registry_username>/<image_name>:<tag>
+          docker tag my-container dhoang5/ubuntu:latest
+          docker push dhoang5/ubuntu:latest
